@@ -21,9 +21,16 @@
   <link href="https://github.com/api/oembed?format=json&amp;url=https%3A%2F%2Fgist.github.com%2Fb273f7a3089b1a238f5a" rel="alternate" title="gist: b273f7a3089b1a238f5a" type="application/json+oembed" />
   <META NAME="ROBOTS" CONTENT="NOINDEX, FOLLOW">
 
-    <!-- scripts that bookmarklet injects -->
-    <script defer="defer" src="gistdeck.js" type="text/javascript"></script>
-    <link rel="stylesheet" href="gistdeck.css" type="text/css" />
+    <!-- bookmarklet-ish injection of local script and css -->
+    <script type="text/javascript">
+      var GISTDECK_CSS_URL="gistdeck.css";
+
+      window.onload = function () {
+        var s = document.createElement("script");
+        s.setAttribute("src", "gistdeck.js");
+        document.getElementsByTagName("body")[0].appendChild(s);
+      };
+    </script>
   </head>
 
   <body class="">
