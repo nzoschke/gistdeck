@@ -49,11 +49,21 @@ ol,
 ul {
   margin-bottom: 18px !important;
 }
+#repo {
+  display: table;
+}
+#repo .repo {
+  display: table-cell;
+  vertical-align: middle;
+  text-align:center;
+}
 .file {
   font-size:36px !important;
   line-height:54px !important;
   padding: 30px !important;
   border:0 none !important;
+  width:1024px;
+  margin:0 auto;
 }
 
 /* owner/gravatar/description becomes title screen */
@@ -113,10 +123,11 @@ ul {
   max-width: auto !important;
 }
 #repos table .description {
-  font-size:36px !important;
-  line-height:36px !important;
+  font-size:54px !important;
+  line-height:54px !important;
   font-weight:normal !important;
   text-align:center !important;
+  color:#5E559E;
 }
 
 /* slide text style */
@@ -159,7 +170,10 @@ p, li {
 li {
   line-height:54px !important;
 }
-
+.file img {
+  float: right;
+  margin-left:20px;
+}
 /* code style */
 
 pre {
@@ -172,3 +186,9 @@ pre {
 pre code {
   font-size:24px !important;
 }
+
+/* distribute slides */
+
+.repo .meta { margin-bottom:800px !important;}
+.markdown-body > h1 { margin-top: 800px !important; }
+.markdown-body > h2 { margin-top: 800px !important; }
