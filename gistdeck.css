@@ -168,7 +168,10 @@ p, li {
   font-size: 36px !important;
 }
 li {
-  line-height:54px !important;
+  line-height:72px !important;
+}
+li:first-child {
+  padding-top:6px;
 }
 .file img {
   float: right;
@@ -177,7 +180,7 @@ li {
 /* code style */
 
 pre {
-  border: 1px solid hsla(246, 13%, 45%, 0.8) !important;
+  border: 1px solid hsla(246, 13%, 45%, 0.4) !important;
   background: hsla(246, 13%, 99%, 0.6) !important;
   -webkit-border-radius: 6px !important;
   -moz-border-radius: 6px !important;
