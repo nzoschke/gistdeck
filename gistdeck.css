@@ -142,7 +142,7 @@ h1, h2 {
 }
 h1 + p, h2 + p {
   text-align:center;
-  font-size:36px;
+  font-size:45px;
 }
 
 /* h2 should be centered at top of page */
@@ -155,4 +155,20 @@ h3, h4 {
 }
 p, li {
   font-size: 36px;
+}
+li {
+  line-height:54px;
+}
+
+/* code style */
+
+pre {
+  border: 1px solid hsla(246, 13%, 45%, 0.8);
+  background: hsla(246, 13%, 99%, 0.6);
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+}
+pre code {
+  font-size:24px;
 }
