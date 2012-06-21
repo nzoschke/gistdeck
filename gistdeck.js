@@ -1,7 +1,7 @@
 var docs = "Turn into Bookmarklet at http://mcdlr.com/js-inject/";
 
 var css = ""                                                  +
-"div.secondary { display: none; }"                            +
+"#header, #repos .meta, #revisions, #comments, #delete_link, #footer { display: none; }"                            +
 "div.main { width: 80%; }"                                    +
 ".markdown-body p { font-size: 24px; }"                       +
 ".markdown-body > h1 { margin-top: 800px; font-size: 75px; }" +

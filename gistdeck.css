@@ -1,0 +1,158 @@
+
+/* hide gist interface */
+#header,
+#revisions,
+#comments,
+#delete_link,
+#footer,
+#files .file .meta {
+  display:none;
+}
+.secondary {
+  float: none;
+  width: auto;
+}
+.main {
+  width:auto;
+}
+#repos .repo, #main, .file, .file article {
+  background:none;
+  background: transparent;
+}
+
+/* basic style */
+
+body {
+  background-attachment: fixed;
+  background-color: #E6E6EC;
+  background-image:-webkit-gradient(linear, 50% 50%, 0, 50% 50%, 100, color-stop(0%, #E6E6EC), color-stop(100%, #B7B6CB));
+  background-image:-webkit-linear-gradient(#E6E6EC, #B7B6CB);
+  background-image:-moz-linear-gradient(#E6E6EC, #B7B6CB);
+  background-image:-o-linear-gradient(#E6E6EC, #B7B6CB);
+  background-image:-ms-linear-gradient(#E6E6EC, #B7B6CB);
+  background-image: linear-gradient(#E6E6EC, #B7B6CB);
+  font-family: "helvetica neue", helvetica, arial, geneva, sans-serif;
+  font-size: 13px;
+  overflow: auto;
+  color:#676482;
+}
+
+a {
+  color:#5F5F90;
+}
+a:hover {
+  text-decoration:none;
+  color:#7C81C6;
+}
+p,
+ol,
+ul {
+  margin-bottom: 18px;
+}
+.file {
+  font-size:36px;
+  line-height:54px;
+  padding: 30px;
+  border:0 none;
+}
+
+/* owner/gravatar/description becomes title screen */
+#owner {
+  background:none;
+  background: transparent;
+  display: block;
+  text-align: center;
+  padding: 30px;
+  margin-top:100px;
+}
+#owner .name,
+#owner .gravatar {
+  display: block;
+  background-color:none;  
+  background: transparent;
+  border: 0 none;
+}
+#owner .gravatar img {
+  height:36px;
+  width: 36px;
+}
+#owner .actor {
+  border: 0 none;
+  background-color:none;
+  background: transparent;
+}
+#owner .name {
+  font-weight:normal;
+  font-size: 24px;
+  color: #676482;
+  text-shadow: none;
+}
+#owner .name a {
+  color: #676482;
+  font-weight:normal;
+}
+#owner .name span {
+  display: none;
+}
+/* hide gist info, except for title */
+
+#repos table .label, #private-clone-url, #repos .title, #repos table tr + #repos table tr  {
+  display: none;
+}
+#repos table td {
+  width:auto;
+  height:auto;
+}
+#repos .repo {
+  margin: 0;
+  border: 0 none;
+}
+#repos table {
+  margin:0 auto;
+  float: none;
+  max-width: auto;
+}
+#repos table .description {
+  font-size:36px;
+  line-height:36px;
+  font-weight:normal;
+  text-align:center;
+}
+
+/* slide text style */
+
+h1, h2, h3, h4, p, ul, ol {
+  color: #676482;
+}
+h1, h2, h3, h4 {
+  border: 0 none;
+}
+h1, h2 {
+  font-weight:normal;
+}
+
+/* h1 and following p should be centered vertically and horizontally */
+
+h1, h2 {
+  font-size:54px;
+  line-height:72px;
+  margin-bottom: 36px;
+  text-align:center;
+  color:#5E559E;
+}
+h1 + p, h2 + p {
+  text-align:center;
+  font-size:36px;
+}
+
+/* h2 should be centered at top of page */
+
+h2 {
+  color:#3F3969;
+}
+h3, h4 {
+  font-size:45px;
+}
+p, li {
+  font-size: 36px;
+}
