@@ -49,14 +49,6 @@ ol,
 ul {
   margin-bottom: 18px !important;
 }
-#repo {
-  display: table;
-}
-#repo .repo {
-  display: table-cell;
-  vertical-align: middle;
-  text-align:center;
-}
 .file {
   font-size:36px !important;
   line-height:54px !important;
@@ -73,7 +65,7 @@ ul {
   display: block !important;
   text-align: center !important;
   padding: 30px !important;
-  margin-top:100px !important;
+  margin-top:120px !important;
 }
 #owner .name,
 #owner .gravatar {
