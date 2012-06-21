@@ -1,18 +1,6 @@
 var docs = "Turn into Bookmarklet at http://mcdlr.com/js-inject/";
 
-var css = ""                                                  +
-"#header, #repos .meta, #revisions, #comments, #delete_link, #footer { display: none; }"                            +
-"div.main { width: 80%; }"                                    +
-".markdown-body p { font-size: 24px; }"                       +
-".markdown-body > h1 { margin-top: 800px; font-size: 75px; }" +
-".markdown-body > h1:first-child { margin-top: 0; }"          +
-".markdown-body > h2 { margin-top: 800px; font-size: 30px; }" +
-".markdown-body > h3 { font-size: 30px; }";
-
-var style=document.createElement("style");
-var styleContent=document.createTextNode(css);
-style.appendChild(styleContent);
-document.getElementsByTagName('head')[0].appendChild(style);
+$("head").append('<link rel="stylesheet" href="https://gistdeck.herokuapp.com/gistdeck.css" type="text/css" />');
 
 var slideNum = 0;
 
