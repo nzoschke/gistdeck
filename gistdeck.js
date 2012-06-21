@@ -1,5 +1,10 @@
 var docs = "Turn into Bookmarklet at http://mcdlr.com/js-inject/";
 
+if (typeof(GISTDECK_CSS_URL) == "undefined")
+    var GISTDECK_CSS_URL="https://gistdeck.herokuapp.com/gistdeck.css"
+
+$("head").append('<link rel="stylesheet" href="' + GISTDECK_CSS_URL + '" type="text/css" />');
+
 var slideNum = 0;
 
 function setSlide(idx) {
