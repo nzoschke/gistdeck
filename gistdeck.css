@@ -148,6 +148,7 @@ h2 {
 h3 {
   font-size:45px !important;
   line-height:54px !important;
+  margin-bottom:18px;
 }
 p, li, h4 {
   margin: 0 !important;
