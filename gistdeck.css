@@ -37,11 +37,11 @@ body {
 }
 
 a {
-  color:#5F5F90 !important;
+  color: #4E51A3 !important;
 }
 a:hover {
   text-decoration:none;
-  color:#7C81C6 !important;
+  color: #514ECA !important;
 }
 p,
 ol,
@@ -132,7 +132,7 @@ h1, h2, h3, h4, p, ul, ol {
 h1, h2, h3, h4 {
   border: 0 none !important;
 }
-h1, h2 {
+h1, h2, h3 {
   font-weight:normal !important;
 }
 
@@ -145,7 +145,7 @@ h1, h2 {
   text-align:center !important;
   color:#5E559E !important;
 }
-h1 + p, h2 + p {
+h1 + p, h3 {
   text-align:center !important;
   font-size:45px !important;
 }
@@ -155,10 +155,7 @@ h1 + p, h2 + p {
 h2 {
   color:#3F3969 !important;
 }
-h3, h4 {
-  font-size:45px !important;
-}
-p, li {
+p, li, h4 {
   font-size: 36px !important;
 }
 li {
@@ -167,9 +164,15 @@ li {
 li:first-child {
   padding-top:6px;
 }
+.file h1 + p img {
+  float: none;
+  -webkit-box-reflect: below 0px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(80%, transparent), to(rgba(255,255,255,0.2)));
+}
 .file h2 + p img {
   float:right !important;
   margin-left: 20px;
+  -webkit-box-reflect: below 0px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(80%, transparent), to(rgba(255,255,255,0.2)));
+
 }
 
 /* code style */
