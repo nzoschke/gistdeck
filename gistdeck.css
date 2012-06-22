@@ -167,9 +167,9 @@ li {
 li:first-child {
   padding-top:6px;
 }
-.file img {
-  float:right;
-  margin-right: 20px;
+.file h2 + p img {
+  float:right !important;
+  margin-left: 20px;
 }
 
 /* code style */
