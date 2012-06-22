@@ -5,7 +5,8 @@
 #comments,
 #delete_link,
 #footer,
-#files .file .meta {
+#files .file .meta,
+#forks {
   display:none !important;
 }
 .secondary {
