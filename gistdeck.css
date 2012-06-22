@@ -158,18 +158,19 @@ p, li, h4 {
 li {
   line-height:72px !important;
 }
-
 li * {
   text-align: left !important;
 }
 
+ol, ul, p {
+  margin-bottom:24px !important;
+}
 /* slides with images and text */
 
 h2 + p img {
   float:right !important;
   margin-left: 20px !important;
 }
-
 
 
 
