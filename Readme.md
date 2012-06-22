@@ -6,7 +6,7 @@ GistDeck is a presentation layer for one of our favorite text sharing tools.
 
 * <a href="https://gistdeck.herokuapp.com">View homepage</a>
 * Drag to Bookmarks Bar GistDeck
-* Visit Gist
+* <a href="https://gist.github.com/b273f7a3089b1a238f5a">Visit Gist</a>
 * Click Bookmarklet
 * Present
 
