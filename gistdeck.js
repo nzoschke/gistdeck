@@ -32,9 +32,14 @@ function displaySlide(n) {
   $("body").scrollTop(top - padding);
 }
 
+function gistUrl() {
+  $('.path').text().trim().replace(/gist: /,'https://gist.github.com/')
+}
+
 $(document).keydown(function(e) {
   if (e.which == 37)      displaySlide(getCurrentSlideIdx()-1);
   else if (e.which == 39) displaySlide(getCurrentSlideIdx()+1);
 });
 
+$('.meta table').append('<tfoot><tr><td>' + gistUrl() + '</td></tr></tfoot>')
 displaySlide(0);
