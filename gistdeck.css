@@ -120,7 +120,7 @@ ul {
   text-align:center !important;
   color:#5E559E;
 }
-#repos table .description form {
+#repos table .description form, #repos table .description form a {
   display: none;
 }
 
