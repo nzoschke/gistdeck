@@ -156,14 +156,10 @@ p, li, h4 {
   font-size: 36px !important;
   line-height:54px !important;
 }
-li {
-  line-height:72px !important;
-}
 li * {
   text-align: left !important;
 }
-
-ol, ul, p {
+li, p {
   margin-bottom:24px !important;
 }
 /* slides with images and text */
