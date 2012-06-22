@@ -1,7 +1,13 @@
-# GistDeck - Presentation Mode for Gists
+# GistDeck
 
-<a href="http://nzoschke.github.com/gistdeck/">Install the bookmarklet</a>
+GistDeck is a presentation layer for one of our favorite text sharing tools.
 
-<a href="https://gist.github.com/1995782">View a gist</a>
+## Instructions
 
-Click the bookmarklet
+* <a href="https://gistdeck.herokuapp.com">View homepage</a>
+* Drag to Bookmarks Bar GistDeck
+* <a href="https://gist.github.com/b273f7a3089b1a238f5a">Visit Gist</a>
+* Click Bookmarklet
+* Present
+
+## by <a href="https://github.com/nzoschke">noah</a> and <a href="https://github.com/seaofclouds">todd</a>
