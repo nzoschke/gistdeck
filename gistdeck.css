@@ -34,6 +34,7 @@ body {
   font-family: "helvetica neue", helvetica, arial, geneva, sans-serif !important;
   font-size: 13px !important;
   color:#676482 !important;
+  text-shadow: hsla(246, 13%, 100%, 0.5) 0px 1px 0px;
   padding-bottom:600px !important;
 }
 
@@ -83,7 +84,7 @@ a:hover {
   font-weight:normal !important;
   font-size: 24px !important;
   color: #676482 !important;
-  text-shadow: none !important;
+  text-shadow: hsla(246, 13%, 100%, 0.5) 0px 1px 0px;
 }
 #owner .name a {
   color: #676482 !important;
