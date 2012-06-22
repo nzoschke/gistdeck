@@ -189,7 +189,7 @@ div.highlight pre, pre {
   border-radius: 6px !important;
   text-align:left;
 }
-div.highlight pre code, pre code {
+div.highlight pre, pre code {
   font-size:24px !important;
   text-align: left;
 }
