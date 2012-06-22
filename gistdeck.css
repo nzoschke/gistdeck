@@ -176,7 +176,11 @@ h2 + p img {
 }
 /* code style */
 
-pre {
+.file div.highlight {
+  background: none !important;
+  background: transparent !important;
+}
+div.highlight pre, pre {
   border: 1px solid hsla(246, 13%, 45%, 0.4) !important;
   background: hsla(246, 13%, 99%, 0.6) !important;
   -webkit-border-radius: 6px !important;
@@ -184,7 +188,7 @@ pre {
   border-radius: 6px !important;
   text-align:left;
 }
-pre code {
+div.highlight pre code, pre code {
   font-size:24px !important;
   text-align: left;
 }
