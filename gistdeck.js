@@ -1,36 +1,40 @@
-var docs = "Turn into Bookmarklet at http://mcdlr.com/js-inject/";
+if (typeof(GISTDECK_CSS_URL) == "undefined")
+    var GISTDECK_CSS_URL="https://gistdeck.herokuapp.com/gistdeck.css"
+$("head").append('<link rel="stylesheet" href="' + GISTDECK_CSS_URL + '" type="text/css" />');
 
-var css = ""                                                  +
-"div.secondary { display: none; }"                            +
-"div.main { width: 80%; }"                                    +
-".markdown-body p { font-size: 24px; }"                       +
-".markdown-body > h1 { margin-top: 800px; font-size: 75px; }" +
-".markdown-body > h1:first-child { margin-top: 0; }"          +
-".markdown-body > h2 { margin-top: 800px; font-size: 30px; }" +
-".markdown-body > h3 { font-size: 30px; }";
+var slides = $("#owner, .markdown-body h1, .markdown-body h2");
 
-var style=document.createElement("style");
-var styleContent=document.createTextNode(css);
-style.appendChild(styleContent);
-document.getElementsByTagName('head')[0].appendChild(style);
+function getCurrentSlideIdx() {
+  var idx = 0;
+  var viewportBottom = $(window).scrollTop() + $(window).height();
 
-var slideNum = 0;
+  for (var i=0; i < slides.length; i++) {
+    if (slides.eq(i).offset().top > viewportBottom) break;
+    idx = i;
+  }
 
-function setSlide(idx) {
-  var slides = $(".markdown-body h1, .markdown-body h2");
+  return idx;
+}
 
-  idx = Math.min(idx, slides.length-1);
-  idx = Math.max(idx, 0);
-  console.log(idx);
+function displaySlide(n) {
+  n = Math.min(n, slides.length-1);
+  n = Math.max(n, 0);
 
-  var s = $(slides[idx]);
-  $("body").animate({scrollTop: s.offset().top}, 50);
-  slideNum = idx;
+  var s = slides.eq(n);
+  var top = s.offset().top;
+
+  var padding = {
+    "DIV": s.offset().top,
+    "H1":  150,
+    "H2":  20
+  }[slides[n].tagName];
+
+  $("body").scrollTop(top - padding);
 }
 
 $(document).keydown(function(e) {
-  if (e.which == 37)      setSlide(slideNum-1);
-  else if (e.which == 39) setSlide(slideNum+1);
+  if (e.which == 37)      displaySlide(getCurrentSlideIdx()-1);
+  else if (e.which == 39) displaySlide(getCurrentSlideIdx()+1);
 });
 
-setSlide(0);
+displaySlide(0);
