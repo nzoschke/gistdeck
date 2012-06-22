@@ -29,7 +29,9 @@ function displaySlide(n) {
     "H2":  20
   }[slides[n].tagName];
 
-  $("body").scrollTop(top - padding);
+  // Animate
+  $.scrollTo( top - padding, 800 );
+
 }
 
 $(document).keydown(function(e) {
