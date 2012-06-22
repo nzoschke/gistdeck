@@ -131,12 +131,11 @@ h1, h2, h3, h4, p, ul, ol {
 }
 h1, h2, h3, h4 {
   border: 0 none !important;
-}
-h1, h2, h3 {
+  text-align:center;
   font-weight:normal !important;
 }
 
-/* h1 and following p should be centered vertically and horizontally */
+/* slides */
 
 h1, h2 {
   font-size:54px !important;
@@ -145,13 +144,14 @@ h1, h2 {
   text-align:center !important;
   color:#5E559E !important;
 }
-h1 + p, h3 {
+h1 + p, h1 + h3, h3{
   text-align:center !important;
   font-size:45px !important;
 }
-
-/* h2 should be centered at top of page */
-
+h1 + p img {
+  float: none;
+  -webkit-box-reflect: below 0px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(80%, transparent), to(rgba(255,255,255,0.2)));
+}
 h2 {
   color:#3F3969 !important;
 }
@@ -161,18 +161,13 @@ p, li, h4 {
 li {
   line-height:72px !important;
 }
-li:first-child {
+ul, ol {
   padding-top:6px;
 }
-.file h1 + p img {
-  float: none;
-  -webkit-box-reflect: below 0px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(80%, transparent), to(rgba(255,255,255,0.2)));
-}
-.file h2 + p img {
+h2 + p img {
   float:right !important;
   margin-left: 20px;
   -webkit-box-reflect: below 0px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(80%, transparent), to(rgba(255,255,255,0.2)));
-
 }
 
 /* code style */
