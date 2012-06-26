@@ -6,7 +6,8 @@
 #delete_link,
 #footer,
 #files .file .meta,
-#forks {
+#forks,
+.fork-info {
   display:none !important;
 }
 .secondary {
