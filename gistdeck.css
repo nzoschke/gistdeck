@@ -182,7 +182,7 @@ h2 + p img {
   background: none !important;
   background: transparent !important;
 }
-div.highlight pre, pre, li code {
+div.highlight pre, pre, .markdown-body code {
   border: 1px solid hsla(246, 13%, 45%, 0.4) !important;
   background: hsla(246, 13%, 99%, 0.6) !important;
   -webkit-border-radius: 6px !important;
