@@ -10,8 +10,7 @@ GistDeck is a presentation layer for one of our favorite text sharing tools.
 * Click Bookmarklet
 * Present, using left and right keys
 
-## by <a href="https://github.com/nzoschke">noah</a> and 
-<a href="https://github.com/seaofclouds">todd</a>
+## by <a href="https://github.com/nzoschke">noah</a> and <a href="https://github.com/seaofclouds">todd</a>
 
 # Examples
 
