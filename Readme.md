@@ -22,7 +22,7 @@ An h2 is a subtopic. This subtopic is followed with a paragraph. Pellentesque id
 lorem nunc, varius porttitor nulla. Phasellus in sapien tellus, id congue metus. 
 Cras et vestibulum nisl. Mauris interdum tincidunt augue vitae tincidunt. 
 
-## Subtopics are often supported with lists
+## Subtopics are often supported with lists:
 
 * Some people call these bullets
 * In markdown and html we call them list items
