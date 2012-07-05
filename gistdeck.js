@@ -5,8 +5,8 @@ $("head").append('<link rel="stylesheet" href="' + GISTDECK_CSS_URL + '" type="t
 var slides = $("#owner, .markdown-body h1, .markdown-body h2")
 
 function getCurrentSlideIdx() {
-  var idx = 0
-  var viewportBottom = $(window).scrollTop() + $(window).height()
+  var idx = 0,
+      viewportBottom = $(window).scrollTop() + $(window).height()
 
   for (var i=0; i < slides.length; i++) {
     if (slides.eq(i).offset().top > viewportBottom) break
@@ -20,10 +20,9 @@ function displaySlide(n) {
   n = Math.min(n, slides.length-1)
   n = Math.max(n, 0)
 
-  var s = slides.eq(n)
-  var top = s.offset().top
-
-  var padding = {
+  var s = slides.eq(n),
+      top = s.offset().top,
+      padding = {
     "DIV": s.offset().top,
     "H1":  150,
     "H2":  20
