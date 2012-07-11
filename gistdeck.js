@@ -29,7 +29,7 @@ function displaySlide(n) {
     "H2":  20
   }[slides[n].tagName];
 
-  $("body").scrollTop(top - padding);
+  $(document).scrollTop(top - padding);
 }
 
 $(document).keydown(function(e) {
