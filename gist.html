@@ -1,328 +1,169 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-        <title>From Gist to Deck &mdash; Gist</title>
-    <link rel="fluid-icon" href="https://github.com/fluidicon.png" title="GitHub" />
-    <link rel="shortcut icon" href="https://github.com/favicon.ico" type="image/x-icon" />
+<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# githubog: http://ogp.me/ns/fb/githubog#">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-    <meta content="authenticity_token" name="csrf-param" />
-<meta content="B3FEEgmz69GyGd56gsxTqrT5AGy1jwh5BuWtMycKZug=" name="csrf-token" />
+  <title>From Gist to Deck</title>
 
-    <link href="https://a248.e.akamai.net/assets.github.com/stylesheets/bundles/gist-79179955c6841e64c9435f0046ed27e43044e30c.css" media="screen" rel="stylesheet" type="text/css" />
-
-    <script defer="defer" src="https://a248.e.akamai.net/assets.github.com/javascripts/bundles/jquery-f0a28b64b331f9c9e2f2f1111cecd94ff0ecd7a6.js" type="text/javascript"></script>
-    <script defer="defer" src="https://a248.e.akamai.net/assets.github.com/javascripts/bundles/gist-3aa192b15dfb21521908aed1b6df00c569b3b8c8.js" type="text/javascript"></script>
-    
-
-    
-  
-  <link href="https://github.com/api/oembed?format=json&amp;url=https%3A%2F%2Fgist.github.com%2Fb273f7a3089b1a238f5a" rel="alternate" title="gist: b273f7a3089b1a238f5a" type="application/json+oembed" />
-  <META NAME="ROBOTS" CONTENT="NOINDEX, FOLLOW">
+  <meta content="authenticity_token" name="csrf-param" />
+<meta content="wetzJTugCFrk3xAm2iyVm0JwDmnuNH7Oohlr/j6dHvc=" name="csrf-token" />
+  <meta name="viewport" content="width=960">
 
 
+  <link href="https://gist.github.com/assets/application-9056ed6214815202318932ff66cee73f.css" media="screen, print" rel="stylesheet" />
+  <script src="https://gist.github.com/assets/application-e198d9db7c530b7c823e5702878cbb8e.js"></script>
 
+    <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@github">
+  <meta name="twitter:creator" content="@seaofclouds">
+  <meta property="og:title" content="gist:b273f7a3089b1a238f5a">
+  <meta property="og:type" content="githubog:gist">
+  <meta property="og:url" content="https://gist.github.com/b273f7a3089b1a238f5a">
+  <meta property="og:image" content="https://secure.gravatar.com/avatar/0c5c5a350941044192ff794a9cd2205b?s=140&amp;d=https://github.com/images/gravatars/gravatar-140.png">
+  <meta property="og:site_name" content="GitHub Gists">
+  <meta property="og:description" content="From Gist to Deck">
 
+  <meta name="description" content="From Gist to Deck">
 
-    <!-- bookmarklet-ish injection of local script and css -->
-    <script type="text/javascript">
-      var GISTDECK_CSS_URL="gistdeck.css";
+  <!-- bookmarklet-ish injection of local script and css -->
+  <script type="text/javascript">
+    var GISTDECK_CSS_URL="gistdeck.css";
 
-      window.onload = function () {
-        var s = document.createElement("script");
-        s.setAttribute("src", "gistdeck.js");
-        document.getElementsByTagName("head")[0].appendChild(s);
-      };
-    </script>
+    window.onload = function () {
+      var s = document.createElement("script");
+      s.setAttribute("src", "gistdeck.js");
+      document.getElementsByTagName("head")[0].appendChild(s);
+    };
+  </script>
+</head>
 
+<body class="">
 
+  <div id="wrapper">
 
+    <div id="header" class="header header-logged-out">
+      <div class="container" class="clearfix">
+        <a class="header-logo-wordmark" href="https://gist.github.com/">
+          <img alt="GitHub:Gist" class="github-logo-4x" height="30" src="https://gist.github.com/assets/modules/header/logo@4x-d1f04d805ee6b4e58ccbdd0652f915f5.png">
+          <img alt="GitHub:Gist" class="github-logo-4x-hover" height="30" src="https://gist.github.com/assets/modules/header/logo@4x-hover-3d1e646ccb5193547b942350f87b068a.png">
+        </a>
 
-
-
-  </head>
-
-  <body class="">
-    <div id="main">
-      <div id="header" class="">
-        <div class="site">
-          <div class="logo">
-            <a href="https://gist.github.com"><img alt="gist" height="45" src="https://a248.e.akamai.net/assets.github.com/images/modules/header/logo_gist.png?1334862346" width="164" /></a>
-          </div>
-
-            
-
-
-
-    <div class="userbox">
-      <div class="avatarname">
-        <a href="https://gist.github.com/seaofclouds"><img height="20" src="https://secure.gravatar.com/avatar/0c5c5a350941044192ff794a9cd2205b?s=140&amp;d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-140.png" width="20" /></a>
-        <a href="https://gist.github.com/seaofclouds" class="name">seaofclouds</a>
-      </div>
-      <ul class="usernav">
-        <li><a href="https://github.com/">Dashboard</a></li>
-        <li>
-          <a href="https://github.com/inbox/notifications">Notifications</a>
-          <a href="https://github.com/inbox/notifications" class="unread_count new js-inbox-count">558</a>
-        </li>
-        <li><a href="https://github.com/settings">Account Settings</a></li>
-        <li><a href="/logout">Log Out</a></li>
-      </ul>
-    </div><!-- /.userbox -->
-
-
-
-
-          <div class="topsearch">
-<form accept-charset="UTF-8" action="/gists/search" id="top_search_form" method="get">              <input type="search" name="q" value="" results="5" class="search" placeholder="Search Gists&hellip;" /> <input type="submit" value="Search" class="button" />
-              <input type="hidden" name="page" value="1" />
-</form>
-            <ul class="nav">
-              <li><a href="https://gist.github.com">New Gist</a></li>
-                <li><a href="https://gist.github.com/mine">My Gists</a>
-                <li><a href="https://gist.github.com/starred">Starred Gists</a>
-              <li><a href="https://gist.github.com/gists">All Gists</a></li>
-              <li><a href="https://github.com">Back to GitHub</a></li>
-            </ul>
-          </div><!-- /.topsearch -->
+        <div class="header-actions">
+          <a class="button primary classy" href="https://github.com/signup?return_to=gist">Sign up for a GitHub Account</a>
+          <a class="button classy" href="/login?return_to=/b273f7a3089b1a238f5a" data-skip-pjax>Sign in</a>
         </div>
       </div>
-
-    <div class="site">
-      
-<div class="secondary">
-
-  <div id="owner">
-      <div class="actor">
-        <div class="gravatar">
-          <img height="30" src="https://secure.gravatar.com/avatar/0c5c5a350941044192ff794a9cd2205b?s=140&amp;d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-140.png" width="30" />
-        </div>
-        <div class="name"><a href="/seaofclouds">seaofclouds</a> <span>(owner)</span></div>
-      </div>
-  </div>
-
-
-    <div class="fork-info" id="forks">
-      <h3>Forks</h3>
-      <ul class="gists forks">
-        <li>
-          <a href="/fcac3d0ec24c34508d88">gist: fcac3d...</a>
-          by <a href="/jackfranklin">jackfra...</a>
-          <span class="description">From Gist to Deck</span>
-          <small>created <span class="date"><time class="js-relative-date" datetime="2012-06-22T13:37:42-07:00" title="2012-06-22 13:37:42">June 22, 2012</time></span></small>
-        </li>
-        <li>
-          <a href="/a718322d42d718abebe7">gist: a71832...</a>
-          by <a href="/timocratic">timocratic</a>
-          <span class="description">From Gist to Deck</span>
-          <small>created <span class="date"><time class="js-relative-date" datetime="2012-06-22T14:19:32-07:00" title="2012-06-22 14:19:32">June 22, 2012</time></span></small>
-        </li>
-        <li>
-          <a href="/4dc1a81641dd962a19d5">gist: 4dc1a8...</a>
-          by <a href="/kblake">kblake</a>
-          <span class="description">From Gist to Deck</span>
-          <small>created <span class="date"><time class="js-relative-date" datetime="2012-06-22T16:00:13-07:00" title="2012-06-22 16:00:13">June 22, 2012</time></span></small>
-        </li>
-        <li>
-          <a href="/502cbfbb14bac53395c3">gist: 502cbf...</a>
-          by <a href="/tomvachon">tomvachon</a>
-          <span class="description">From Gist to Deck</span>
-          <small>created <span class="date"><time class="js-relative-date" datetime="2012-06-22T16:49:15-07:00" title="2012-06-22 16:49:15">June 22, 2012</time></span></small>
-        </li>
-        <li>
-          <a href="/a5553b557f0c6ea5d2a6">gist: a5553b...</a>
-          by <a href="/hemanth">hemanth</a>
-          <span class="description">From Gist to Deck</span>
-          <small>created <span class="date"><time class="js-relative-date" datetime="2012-06-23T09:51:01-07:00" title="2012-06-23 09:51:01">June 23, 2012</time></span></small>
-        </li>
-        <li>
-          <a href="/9c9ab070a39d82c7713e">gist: 9c9ab0...</a>
-          by <a href="/matschaffer">matscha...</a>
-          <span class="description">From Gist to Deck</span>
-          <small>created <span class="date"><time class="js-relative-date" datetime="2012-06-23T13:15:11-07:00" title="2012-06-23 13:15:11">June 23, 2012</time></span></small>
-        </li>
-        <li>
-          <a href="/2c04c095b9c04ef4be0d">gist: 2c04c0...</a>
-          by <a href="/cslew">cslew</a>
-          <span class="description">From Gist to Deck</span>
-          <small>created <span class="date"><time class="js-relative-date" datetime="2012-06-23T19:19:06-07:00" title="2012-06-23 19:19:06">June 23, 2012</time></span></small>
-        </li>
-      </ul>
     </div>
 
-  <div id="revisions">
-    <h3>Revisions</h3>
-    <ul>
-        <li class="current">
-          <img alt="" src="https://a248.e.akamai.net/assets.github.com/images/gist/gist/dot_green.png?1329921026" /><img alt="" src="https://a248.e.akamai.net/assets.github.com/images/gist/gist/dot_green.png?1329921026" /><img alt="" src="https://a248.e.akamai.net/assets.github.com/images/gist/gist/dot_green.png?1329921026" /><img alt="" src="https://a248.e.akamai.net/assets.github.com/images/gist/gist/dot_red.png?1329921026" /><img alt="" src="https://a248.e.akamai.net/assets.github.com/images/gist/gist/dot_red.png?1329921026" /><img alt="" src="https://a248.e.akamai.net/assets.github.com/images/gist/gist/dot_red.png?1329921026" /><img alt="" src="https://a248.e.akamai.net/assets.github.com/images/gist/gist/dot_gray.png?1329921026" />
-          <a href="https://gist.github.com/b273f7a3089b1a238f5a/d08d9a4b01e8c7103e1257b2cd183d3938100aaa" class="id" rel="nofollow">d08d9a</a>
+    <div class="site-content" id="js-pjax-container" data-pjax-container>
+      <div class="vis-secret site-container js-site-container" data-url="/b273f7a3089b1a238f5a">
+  <div class="pagehead repohead">
+  <div class="container">
+    <div class="title-actions-bar">
+      <ul class="pagehead-actions">
+      </ul>
+      <h1 itemscope itemtype="http://data-vocabulary.org/Breadcrumb" class="entry-title secret">
+        <span class="repo-label"><span>secret</span></span>
+        <span class="mega-icon mega-icon-gist-secret tooltipped downandright" title="Secret gists are hidden from search engines but visible to anyone you give the URL."></span>
+        <div class="meta">
+          <div class="gist-author">
+            <img src="https://secure.gravatar.com/avatar/0c5c5a350941044192ff794a9cd2205b?s=140&amp;d=https://github.com/images/gravatars/gravatar-140.png" width="26" height="26">
+            <span class="author vcard">
+                <span itemprop="title"><a href="/seaofclouds">seaofclouds</a></span>
+            </span> /
+            <strong><a href="/b273f7a3089b1a238f5a" class="js-current-repository">gist:b273f7a3089b1a238f5a</a></strong>
+          </div>
+          <div class="gist-timestamp">
+              <span class="datetime">Last updated <time class="js-relative-date" title="2012-12-11T18:57:59Z" datetime="2012-12-11T18:57:59Z">2012-12-11</time></span>
+          </div>
+      </h1>
+    </div>
 
-            <a href="/seaofclouds" class="author">seaofcl...</a>
-          <span class="date"><time class="js-relative-date" datetime="2012-06-27T23:16:29-07:00" title="2012-06-27 23:16:29">June 27, 2012</time></span>
+  </div>
+</div>
+
+
+
+<div class="gist-description container">
+  <p>From Gist to Deck</p>
+</div>
+
+<div class="gist container">
+    <div class="root-pane">
+  <div class="menu-container">
+    <ul class="menu gisttabs">
+      <li>
+        <a href="/b273f7a3089b1a238f5a" class="selected">
+          Gist Detail
+        </a>
+      </li>
+
+        <li>
+          <a href="/b273f7a3089b1a238f5a/revisions" >
+            Revisions
+            <span class="counter">66</span>
+          </a>
         </li>
-        <li class="other">
-          <img alt="" src="https://a248.e.akamai.net/assets.github.com/images/gist/gist/dot_green.png?1329921026" /><img alt="" src="https://a248.e.akamai.net/assets.github.com/images/gist/gist/dot_green.png?1329921026" /><img alt="" src="https://a248.e.akamai.net/assets.github.com/images/gist/gist/dot_green.png?1329921026" /><img alt="" src="https://a248.e.akamai.net/assets.github.com/images/gist/gist/dot_red.png?1329921026" /><img alt="" src="https://a248.e.akamai.net/assets.github.com/images/gist/gist/dot_red.png?1329921026" /><img alt="" src="https://a248.e.akamai.net/assets.github.com/images/gist/gist/dot_red.png?1329921026" /><img alt="" src="https://a248.e.akamai.net/assets.github.com/images/gist/gist/dot_gray.png?1329921026" />
-          <a href="https://gist.github.com/b273f7a3089b1a238f5a/00dd5089a3459108adfdf92c19870762d456ed21" class="id" rel="nofollow">00dd50</a>
 
-            <a href="/seaofclouds" class="author">seaofcl...</a>
-          <span class="date"><time class="js-relative-date" datetime="2012-06-22T13:57:50-07:00" title="2012-06-22 13:57:50">June 22, 2012</time></span>
+        <li>
+          <a href="/b273f7a3089b1a238f5a/stars" >
+            Stars
+            <span class="counter">17</span>
+          </a>
         </li>
-        <li class="other">
-          <img alt="" src="https://a248.e.akamai.net/assets.github.com/images/gist/gist/dot_green.png?1329921026" /><img alt="" src="https://a248.e.akamai.net/assets.github.com/images/gist/gist/dot_green.png?1329921026" /><img alt="" src="https://a248.e.akamai.net/assets.github.com/images/gist/gist/dot_green.png?1329921026" /><img alt="" src="https://a248.e.akamai.net/assets.github.com/images/gist/gist/dot_red.png?1329921026" /><img alt="" src="https://a248.e.akamai.net/assets.github.com/images/gist/gist/dot_red.png?1329921026" /><img alt="" src="https://a248.e.akamai.net/assets.github.com/images/gist/gist/dot_gray.png?1329921026" /><img alt="" src="https://a248.e.akamai.net/assets.github.com/images/gist/gist/dot_gray.png?1329921026" />
-          <a href="https://gist.github.com/b273f7a3089b1a238f5a/6af5006c252b4c13ec7f11cc8bd4b7711a4a5b70" class="id" rel="nofollow">6af500</a>
 
-            <a href="/seaofclouds" class="author">seaofcl...</a>
-          <span class="date"><time class="js-relative-date" datetime="2012-06-22T13:56:28-07:00" title="2012-06-22 13:56:28">June 22, 2012</time></span>
-        </li>
-        <li class="other">
-          <img alt="" src="https://a248.e.akamai.net/assets.github.com/images/gist/gist/dot_green.png?1329921026" /><img alt="" src="https://a248.e.akamai.net/assets.github.com/images/gist/gist/dot_green.png?1329921026" /><img alt="" src="https://a248.e.akamai.net/assets.github.com/images/gist/gist/dot_green.png?1329921026" /><img alt="" src="https://a248.e.akamai.net/assets.github.com/images/gist/gist/dot_red.png?1329921026" /><img alt="" src="https://a248.e.akamai.net/assets.github.com/images/gist/gist/dot_gray.png?1329921026" /><img alt="" src="https://a248.e.akamai.net/assets.github.com/images/gist/gist/dot_gray.png?1329921026" /><img alt="" src="https://a248.e.akamai.net/assets.github.com/images/gist/gist/dot_gray.png?1329921026" />
-          <a href="https://gist.github.com/b273f7a3089b1a238f5a/18315fe895895c01fa76914bff80236b18a55288" class="id" rel="nofollow">18315f</a>
-
-            <a href="/seaofclouds" class="author">seaofcl...</a>
-          <span class="date"><time class="js-relative-date" datetime="2012-06-22T13:17:16-07:00" title="2012-06-22 13:17:16">June 22, 2012</time></span>
-        </li>
-        <li class="other">
-          <img alt="" src="https://a248.e.akamai.net/assets.github.com/images/gist/gist/dot_green.png?1329921026" /><img alt="" src="https://a248.e.akamai.net/assets.github.com/images/gist/gist/dot_red.png?1329921026" /><img alt="" src="https://a248.e.akamai.net/assets.github.com/images/gist/gist/dot_gray.png?1329921026" /><img alt="" src="https://a248.e.akamai.net/assets.github.com/images/gist/gist/dot_gray.png?1329921026" /><img alt="" src="https://a248.e.akamai.net/assets.github.com/images/gist/gist/dot_gray.png?1329921026" /><img alt="" src="https://a248.e.akamai.net/assets.github.com/images/gist/gist/dot_gray.png?1329921026" /><img alt="" src="https://a248.e.akamai.net/assets.github.com/images/gist/gist/dot_gray.png?1329921026" />
-          <a href="https://gist.github.com/b273f7a3089b1a238f5a/3f95ede5130ef68ed29359a08bd100e846e27757" class="id" rel="nofollow">3f95ed</a>
-
-            <a href="/seaofclouds" class="author">seaofcl...</a>
-          <span class="date"><time class="js-relative-date" datetime="2012-06-22T10:29:54-07:00" title="2012-06-22 10:29:54">June 22, 2012</time></span>
-        </li>
-        <li class="other">
-          <img alt="" src="https://a248.e.akamai.net/assets.github.com/images/gist/gist/dot_green.png?1329921026" /><img alt="" src="https://a248.e.akamai.net/assets.github.com/images/gist/gist/dot_green.png?1329921026" /><img alt="" src="https://a248.e.akamai.net/assets.github.com/images/gist/gist/dot_red.png?1329921026" /><img alt="" src="https://a248.e.akamai.net/assets.github.com/images/gist/gist/dot_red.png?1329921026" /><img alt="" src="https://a248.e.akamai.net/assets.github.com/images/gist/gist/dot_gray.png?1329921026" /><img alt="" src="https://a248.e.akamai.net/assets.github.com/images/gist/gist/dot_gray.png?1329921026" /><img alt="" src="https://a248.e.akamai.net/assets.github.com/images/gist/gist/dot_gray.png?1329921026" />
-          <a href="https://gist.github.com/b273f7a3089b1a238f5a/bfe106b052f4942a2dcaf9520b3bdd672672a8b7" class="id" rel="nofollow">bfe106</a>
-
-            <a href="/seaofclouds" class="author">seaofcl...</a>
-          <span class="date"><time class="js-relative-date" datetime="2012-06-22T09:13:58-07:00" title="2012-06-22 09:13:58">June 22, 2012</time></span>
-        </li>
-        <li class="other">
-          <img alt="" src="https://a248.e.akamai.net/assets.github.com/images/gist/gist/dot_green.png?1329921026" /><img alt="" src="https://a248.e.akamai.net/assets.github.com/images/gist/gist/dot_red.png?1329921026" /><img alt="" src="https://a248.e.akamai.net/assets.github.com/images/gist/gist/dot_gray.png?1329921026" /><img alt="" src="https://a248.e.akamai.net/assets.github.com/images/gist/gist/dot_gray.png?1329921026" /><img alt="" src="https://a248.e.akamai.net/assets.github.com/images/gist/gist/dot_gray.png?1329921026" /><img alt="" src="https://a248.e.akamai.net/assets.github.com/images/gist/gist/dot_gray.png?1329921026" /><img alt="" src="https://a248.e.akamai.net/assets.github.com/images/gist/gist/dot_gray.png?1329921026" />
-          <a href="https://gist.github.com/b273f7a3089b1a238f5a/84dc144d78d055f981f3bfc2041329258121d58e" class="id" rel="nofollow">84dc14</a>
-
-            <a href="/seaofclouds" class="author">seaofcl...</a>
-          <span class="date"><time class="js-relative-date" datetime="2012-06-22T09:10:07-07:00" title="2012-06-22 09:10:07">June 22, 2012</time></span>
-        </li>
-        <li class="other">
-          <img alt="" src="https://a248.e.akamai.net/assets.github.com/images/gist/gist/dot_green.png?1329921026" /><img alt="" src="https://a248.e.akamai.net/assets.github.com/images/gist/gist/dot_green.png?1329921026" /><img alt="" src="https://a248.e.akamai.net/assets.github.com/images/gist/gist/dot_red.png?1329921026" /><img alt="" src="https://a248.e.akamai.net/assets.github.com/images/gist/gist/dot_red.png?1329921026" /><img alt="" src="https://a248.e.akamai.net/assets.github.com/images/gist/gist/dot_gray.png?1329921026" /><img alt="" src="https://a248.e.akamai.net/assets.github.com/images/gist/gist/dot_gray.png?1329921026" /><img alt="" src="https://a248.e.akamai.net/assets.github.com/images/gist/gist/dot_gray.png?1329921026" />
-          <a href="https://gist.github.com/b273f7a3089b1a238f5a/e0bb493068fb4178f181cf7faf4516c58d6b8122" class="id" rel="nofollow">e0bb49</a>
-
-            <a href="/seaofclouds" class="author">seaofcl...</a>
-          <span class="date"><time class="js-relative-date" datetime="2012-06-22T09:08:49-07:00" title="2012-06-22 09:08:49">June 22, 2012</time></span>
-        </li>
-        <li class="other">
-          <img alt="" src="https://a248.e.akamai.net/assets.github.com/images/gist/gist/dot_green.png?1329921026" /><img alt="" src="https://a248.e.akamai.net/assets.github.com/images/gist/gist/dot_green.png?1329921026" /><img alt="" src="https://a248.e.akamai.net/assets.github.com/images/gist/gist/dot_green.png?1329921026" /><img alt="" src="https://a248.e.akamai.net/assets.github.com/images/gist/gist/dot_red.png?1329921026" /><img alt="" src="https://a248.e.akamai.net/assets.github.com/images/gist/gist/dot_red.png?1329921026" /><img alt="" src="https://a248.e.akamai.net/assets.github.com/images/gist/gist/dot_red.png?1329921026" /><img alt="" src="https://a248.e.akamai.net/assets.github.com/images/gist/gist/dot_gray.png?1329921026" />
-          <a href="https://gist.github.com/b273f7a3089b1a238f5a/cedad3ec124c6bbaa22583668f410fcfdeb98bba" class="id" rel="nofollow">cedad3</a>
-
-            <a href="/seaofclouds" class="author">seaofcl...</a>
-          <span class="date"><time class="js-relative-date" datetime="2012-06-22T09:05:42-07:00" title="2012-06-22 09:05:42">June 22, 2012</time></span>
-        </li>
-        <li class="other">
-          <img alt="" src="https://a248.e.akamai.net/assets.github.com/images/gist/gist/dot_green.png?1329921026" /><img alt="" src="https://a248.e.akamai.net/assets.github.com/images/gist/gist/dot_green.png?1329921026" /><img alt="" src="https://a248.e.akamai.net/assets.github.com/images/gist/gist/dot_red.png?1329921026" /><img alt="" src="https://a248.e.akamai.net/assets.github.com/images/gist/gist/dot_red.png?1329921026" /><img alt="" src="https://a248.e.akamai.net/assets.github.com/images/gist/gist/dot_gray.png?1329921026" /><img alt="" src="https://a248.e.akamai.net/assets.github.com/images/gist/gist/dot_gray.png?1329921026" /><img alt="" src="https://a248.e.akamai.net/assets.github.com/images/gist/gist/dot_gray.png?1329921026" />
-          <a href="https://gist.github.com/b273f7a3089b1a238f5a/98fba119e6cb5b85a85e271f783a52692d78636f" class="id" rel="nofollow">98fba1</a>
-
-            <a href="/seaofclouds" class="author">seaofcl...</a>
-          <span class="date"><time class="js-relative-date" datetime="2012-06-22T08:08:38-07:00" title="2012-06-22 08:08:38">June 22, 2012</time></span>
+        <li>
+          <a href="/b273f7a3089b1a238f5a/forks" >
+            Forks
+            <span class="counter">19</span>
+          </a>
         </li>
     </ul>
   </div>
-</div><!-- /.secondary -->
 
-<div class="main">
-  <div id="repos" class="readability-header">
-    <div class="repo private">
-      <div class="title">
-        <div class="path">
-          gist: b273f7a3089b1a238f5a
+  <ul class="export-references">
+    <li>
+      <a href="/b273f7a3089b1a238f5a/download" class="minibutton" rel="nofollow"><span class="mini-icon mini-icon-download"></span>Download Gist</a>
+    </li>
+    <li>
+      <label for="url-field"><strong>Clone</strong> this gist</label>
+      <input type="text" spellcheck="false" class="url-field js-url-field" name="url-field" value="https://gist.github.com/b273f7a3089b1a238f5a.git">
+    </li>
+    <li>
+      <label for="embed-field"><strong>Embed</strong> this gist</label>
+      <input type="text" spellcheck="false" class="url-field js-url-field" name="embed-field" value="&lt;script src=&quot;https://gist.github.com/b273f7a3089b1a238f5a.js&quot;&gt;&lt;/script&gt;">
+    </li>
+  </ul>
+</div>
 
-            <a href="/gists/b273f7a3089b1a238f5a/edit"><img alt="edit" class="button" src="https://a248.e.akamai.net/assets.github.com/images/gist/buttons/edit_button.png?1334862345" /></a>
 
-            <a href="/gists/b273f7a3089b1a238f5a/download"><img alt="Download_button" border="0" class="button" src="https://a248.e.akamai.net/assets.github.com/images/gist/buttons/download_button.png?1334862345" /></a>
-
-            <a href="/star/b273f7a3089b1a238f5a" data-method="post"><img alt="star" class="button" src="https://a248.e.akamai.net/assets.github.com/images/gist/buttons/star_button.png?1334862345" /></a>
-        </div>
-
-          <div class="security private_security" style="">
-            <a href="#private_repo" rel="facebox"><img alt="private" src="https://a248.e.akamai.net/assets.github.com/images/gist/icons/private.png?1334862345" /></a>
-          </div>
-
-        <div id="private_repo" class="hidden">
-          <h2>Private Gist</h2>
-          <p>
-            All pages are served over SSL and all pushing and pulling is done over SSH.
-            No one may fork, clone, or view it unless they are given this private URL.
-          </p>
-          <p>Every gist with this icon (<img alt="private" src="https://a248.e.akamai.net/assets.github.com/images/gist/icons/private.png?1334862345" />) is private.</p>
-        </div>
-        <div class="security public_security" style="display:none">
-          <a href="#public_repo" rel="facebox"><img alt="public" src="https://a248.e.akamai.net/assets.github.com/images/gist/icons/public.png?1334862345" /></a>
-        </div>
-        <div id="public_repo" class="hidden">
-          <h2>Public Gist</h2>
-          <p>Anyone may fork, clone, or view it.</p>
-          <p>Every repository with this icon (<img alt="public" src="https://a248.e.akamai.net/assets.github.com/images/gist/icons/public.png?1334862345" />) is public.</p>
-        </div>
-      </div>
-
-      <div class="meta">
-        <table>
-          <tr>
-            <td class="label">Description:</td>
-            <td>
-              <div class="description">
-                <span id="description" class="edit instapaper_title">From Gist to Deck</span>
-<form accept-charset="UTF-8" action="/gists/2967374" class="edit_gist" id="edit_gist_2967374" method="post" style="display:none"><div style="margin:0;padding:0;display:inline"><input name="_method" type="hidden" value="put" /><input name="authenticity_token" type="hidden" value="B3FEEgmz69GyGd56gsxTqrT5AGy1jwh5BuWtMycKZug=" /></div>                    <input id="gist_description" name="gist[description]" size="30" type="text" value="From Gist to Deck" />
-                    <input id="gist_submit" name="commit" type="submit" value="save" />
-</form>                  <a href="#description" class="edit action" title="edit gist description">edit</a>
+  <div class="column files">
+        <div id="file-gistfile1-md" class="bubble">
+          <div class="file-box ">
+            <div class="meta">
+              <div class="info">
+                <span class="icon mini-icon "></span>
+                <strong class="name">gistfile1.md</strong>
+                <span class="language">Markdown</span>
+                <span class="size">2.6 KB</span>
               </div>
-            </td>
-          </tr>
+              <ul class="button-group actions">
+                <li><a title="Bookmark" href="#file-gistfile1-md" class="grouped-button minibutton tooltipped downwards bookmark"><span class="mini-icon mini-icon-link"></span></a></li>
+                <li><a title="View Raw" href="/raw/b273f7a3089b1a238f5a/2a816c94baa8436ae5dcac35ddec2638cbf83d89/gistfile1.md" data-skip-pjax class="grouped-button minibutton tooltipped downwards raw-url"><span class="mini-icon mini-icon-code"></span></a></li>
+              </ul>
+            </div>
+            <div class="suppressed">
+              <a class="js-show-suppressed-file">File suppressed. Click to show.</a>
+            </div>
+            
+  <div id="readme">
+    <article class="markdown-body">
+      <h1>Crafting a presentation can be difficult</h1>
 
+<h2>Too many tools</h2>
 
-            <tr>
-              <td class="label">Private Clone URL:</td>
-              <td>
-                <div id="private-clone-url">
-                  <a class="git_url_facebox" rel="#git-private-clone">git@gist.github.com:b273f7a3089b1a238f5a.git</a>
-                  <input type="text" value="git@gist.github.com:b273f7a3089b1a238f5a.git" style="display: none;" />
-                </div>
-                <div id="git-private-clone" style="display:none; min-width:500px">
-                  Use this clone URL yourself.
-                  <br/>
-                  <code>git clone git@gist.github.com:b273f7a3089b1a238f5a.git gist-b273f7a3</code>
-                </div>
-              </td>
-            </tr>
-
-
-        </table>
-      </div>
-    </div>
-  </div>
-
-  <div id="files" class="instapaper_body">
-
-        <div class="file" id="file_gistfile1.md">
-  <div class="meta clearfix instapaper_ignore readability-extra">
-    <div class="info">
-      <span class="code">
-          Markdown
-        <a href="#file_gistfile1.md">#</a>
-      </span>
-    </div>
-    <div class="actions">
-      <a href="/raw/b273f7a3089b1a238f5a/2a816c94baa8436ae5dcac35ddec2638cbf83d89/gistfile1.md">raw</a>
-    </div>
-  </div>
-  
-  <div id="readme" class="blob instapaper_body">
-    <article class="markdown-body entry-content" itemprop="mainContentOfPage"><h1>
-<a name="crafting-a-presentation-can-be-difficult" class="anchor" href="#crafting-a-presentation-can-be-difficult"><span class="mini-icon mini-icon-link"></span></a>Crafting a presentation can be difficult</h1>
-
-<h2>
-<a name="too-many-tools" class="anchor" href="#too-many-tools"><span class="mini-icon mini-icon-link"></span></a>Too many tools</h2>
-
-<p><a target="_blank" href="https://dl.dropbox.com/u/2361730/GistDeck/tools.png"><img src="https://dl.dropbox.com/u/2361730/GistDeck/tools.png" alt="tools" style="max-width:100%;"></a></p>
+<p><a href="https://dl.dropbox.com/u/2361730/GistDeck/tools.png" target="_blank"><img src="https://dl.dropbox.com/u/2361730/GistDeck/tools.png" alt="tools" style="max-width:100%;"></a></p>
 
 <ul>
 <li><a href="http://www.apple.com/iwork/keynote/">Keynote</a></li>
@@ -330,10 +171,9 @@
 <li>PowerPoint</li>
 <li>PDFs</li>
 <li>etc</li>
-</ul><h2>
-<a name="too-many-options" class="anchor" href="#too-many-options"><span class="mini-icon mini-icon-link"></span></a>Too many options</h2>
+</ul><h2>Too many options</h2>
 
-<p><a target="_blank" href="https://dl.dropbox.com/u/2361730/GistDeck/options.png"><img src="https://dl.dropbox.com/u/2361730/GistDeck/options.png" alt="" style="max-width:100%;"></a></p>
+<p><a href="https://dl.dropbox.com/u/2361730/GistDeck/options.png" target="_blank"><img src="https://dl.dropbox.com/u/2361730/GistDeck/options.png" alt="" style="max-width:100%;"></a></p>
 
 <ul>
 <li>Templates</li>
@@ -341,10 +181,9 @@
 <li>Screen Sizes</li>
 <li>Fonts</li>
 <li>Transitions</li>
-</ul><h2>
-<a name="too-many-distractions" class="anchor" href="#too-many-distractions"><span class="mini-icon mini-icon-link"></span></a>Too many distractions</h2>
+</ul><h2>Too many distractions</h2>
 
-<p><a target="_blank" href="https://dl.dropbox.com/u/2361730/GistDeck/distractions.png"><img src="https://dl.dropbox.com/u/2361730/GistDeck/distractions.png" alt="" style="max-width:100%;"></a></p>
+<p><a href="https://dl.dropbox.com/u/2361730/GistDeck/distractions.png" target="_blank"><img src="https://dl.dropbox.com/u/2361730/GistDeck/distractions.png" alt="" style="max-width:100%;"></a></p>
 
 <ul>
 <li>Toolbars</li>
@@ -352,8 +191,7 @@
 <li>Drawing tools</li>
 <li>Windows</li>
 <li>Lolcats</li>
-</ul><h2>
-<a name="why-cant-it-be-easier" class="anchor" href="#why-cant-it-be-easier"><span class="mini-icon mini-icon-link"></span></a>Why can't it be easier?</h2>
+</ul><h2>Why can't it be easier?</h2>
 
 <p>Why must we install software?</p>
 
@@ -363,16 +201,13 @@
 
 <p>Why can't we publish instantly?</p>
 
-<h1>
-<a name="introducing-gistdeck" class="anchor" href="#introducing-gistdeck"><span class="mini-icon mini-icon-link"></span></a>Introducing GistDeck</h1>
+<h1>Introducing GistDeck</h1>
 
-<p><a target="_blank" href="https://dl.dropbox.com/u/2361730/GistDeck/logo.png"><img src="https://dl.dropbox.com/u/2361730/GistDeck/logo.png" alt="" style="max-width:100%;"></a></p>
+<p><a href="https://dl.dropbox.com/u/2361730/GistDeck/logo.png" target="_blank"><img src="https://dl.dropbox.com/u/2361730/GistDeck/logo.png" alt="" style="max-width:100%;"></a></p>
 
-<h1>
-<a name="gistdeck-is-a-presentation-layer-for-one-of-our-favorite-text-sharing-tools" class="anchor" href="#gistdeck-is-a-presentation-layer-for-one-of-our-favorite-text-sharing-tools"><span class="mini-icon mini-icon-link"></span></a>GistDeck is a presentation layer for one of our favorite text sharing tools.</h1>
+<h1>GistDeck is a presentation layer for one of our favorite text sharing tools.</h1>
 
-<h2>
-<a name="built-with-tools-you-use-every-day" class="anchor" href="#built-with-tools-you-use-every-day"><span class="mini-icon mini-icon-link"></span></a>Built with tools you use every day</h2>
+<h2>Built with tools you use every day</h2>
 
 <p>Browser</p>
 
@@ -380,8 +215,7 @@
 
 <p>HTML, CSS, JS</p>
 
-<h2>
-<a name="no-software" class="anchor" href="#no-software"><span class="mini-icon mini-icon-link"></span></a>No Software</h2>
+<h2>No Software</h2>
 
 <p>No Apps, No Servers</p>
 
@@ -391,21 +225,17 @@
 
 <p>And an idea worth sharing</p>
 
-<h1>
-<a name="some-examples" class="anchor" href="#some-examples"><span class="mini-icon mini-icon-link"></span></a>Some examples</h1>
+<h1>Some examples</h1>
 
-<h1>
-<a name="this-is-a-topic" class="anchor" href="#this-is-a-topic"><span class="mini-icon mini-icon-link"></span></a>This is a topic</h1>
+<h1>This is a topic</h1>
 
 <p>front and center</p>
 
-<h2>
-<a name="this-is-a-subtopic" class="anchor" href="#this-is-a-subtopic"><span class="mini-icon mini-icon-link"></span></a>This is a Subtopic</h2>
+<h2>This is a Subtopic</h2>
 
 <p>This is a paragraph. Pellentesque id lorem nunc, varius porttitor nulla. Phasellus in sapien tellus, id congue metus. Cras et vestibulum nisl. Mauris interdum tincidunt augue vitae tincidunt. </p>
 
-<h2>
-<a name="subtopics-can-have-bullets" class="anchor" href="#subtopics-can-have-bullets"><span class="mini-icon mini-icon-link"></span></a>Subtopics can have bullets:</h2>
+<h2>Subtopics can have bullets:</h2>
 
 <ul>
 <li>Supporting Bullet</li>
@@ -413,173 +243,96 @@
 <li>Phasellus et mauris et mauris</li>
 <li>A list item can have code</li>
 <li><code>ruby -pe 'next unless $_ =~ /bullet/' &lt; file.md</code></li>
-</ul><h2>
-<a name="subtopics-can-have-images" class="anchor" href="#subtopics-can-have-images"><span class="mini-icon mini-icon-link"></span></a>Subtopics can have images:</h2>
+</ul><h2>Subtopics can have images:</h2>
 
-<p><a target="_blank" href="https://a248.e.akamai.net/camo.github.com/4637e8b1d83107b465aa4da40b07a17e1807d2af/687474703a2f2f706c6163656b697474656e2e636f6d2f672f3430302f343030"><img src="https://a248.e.akamai.net/camo.github.com/4637e8b1d83107b465aa4da40b07a17e1807d2af/687474703a2f2f706c6163656b697474656e2e636f6d2f672f3430302f343030" alt="" style="max-width:100%;"></a></p>
+<p><a href="https://a248.e.akamai.net/camo.github.com/4637e8b1d83107b465aa4da40b07a17e1807d2af/687474703a2f2f706c6163656b697474656e2e636f6d2f672f3430302f343030" target="_blank"><img src="https://a248.e.akamai.net/camo.github.com/4637e8b1d83107b465aa4da40b07a17e1807d2af/687474703a2f2f706c6163656b697474656e2e636f6d2f672f3430302f343030" alt="" style="max-width:100%;"></a></p>
 
 <p>Sollicitudin vestibulum magna. Nulla facilisi. Fusce rutrum bibendum dapibus. Nam dictum blandit faucibus. In hac habitasse platea dictumst. Fusce faucibus sagittis sapien vel posuere. </p>
 
-<h2>
-<a name="subtopics-love-code-snippets" class="anchor" href="#subtopics-love-code-snippets"><span class="mini-icon mini-icon-link"></span></a>Subtopics love code snippets:</h2>
+<h2>Subtopics love code snippets:</h2>
 
 <ol>
 <li>
 <p>In Ruby you can map like this:</p>
 
-<div class="highlight">
-<pre><span class="o">[</span><span class="s1">'a'</span><span class="p">,</span> <span class="s1">'b'</span><span class="o">].</span><span class="n">map</span> <span class="p">{</span> <span class="o">|</span><span class="n">x</span><span class="o">|</span> <span class="n">x</span><span class="o">.</span><span class="n">uppercase</span> <span class="p">}</span>
-</pre>
-</div>
+<div class="highlight"><pre><span class="o">[</span><span class="s1">'a'</span><span class="p">,</span> <span class="s1">'b'</span><span class="o">].</span><span class="n">map</span> <span class="p">{</span> <span class="o">|</span><span class="n">x</span><span class="o">|</span> <span class="n">x</span><span class="o">.</span><span class="n">uppercase</span> <span class="p">}</span>
+</pre></div>
 </li>
 <li>
 <p>In Rails, you can do a shortcut:</p>
 
-<div class="highlight">
-<pre><span class="o">[</span><span class="s1">'a'</span><span class="p">,</span> <span class="s1">'b'</span><span class="o">].</span><span class="n">map</span><span class="p">(</span><span class="o">&amp;</span><span class="ss">:uppercase</span><span class="p">)</span>
-</pre>
-</div>
+<div class="highlight"><pre><span class="o">[</span><span class="s1">'a'</span><span class="p">,</span> <span class="s1">'b'</span><span class="o">].</span><span class="n">map</span><span class="p">(</span><span class="o">&amp;</span><span class="ss">:uppercase</span><span class="p">)</span>
+</pre></div>
 </li>
-</ol><h2>
-<a name="this-presentation-is-a-gist" class="anchor" href="#this-presentation-is-a-gist"><span class="mini-icon mini-icon-link"></span></a>This presentation is a gist!</h2>
+</ol><h2>This presentation is a gist!</h2>
 
 <p><a href="https://gist.github.com/gists/b273f7a3089b1a238f5a">https://gist.github.com/gists/b273f7a3089b1a238f5a</a></p>
 
-<p><a target="_blank" href="https://dl.dropbox.com/u/2361730/GistDeck/screenshot.png"><img src="https://dl.dropbox.com/u/2361730/GistDeck/screenshot.png" height="300" style="max-width:100%;"></a></p>
+<p><a href="https://dl.dropbox.com/u/2361730/GistDeck/screenshot.png" target="_blank"><img src="https://dl.dropbox.com/u/2361730/GistDeck/screenshot.png" height="300" style="max-width:100%;"></a></p>
 
-<h2>
-<a name="whaaaaat" class="anchor" href="#whaaaaat"><span class="mini-icon mini-icon-link"></span></a>Whaaaaat?</h2>
+<h2>Whaaaaat?</h2>
 
-<p><a target="_blank" href="https://dl.dropbox.com/u/2361730/GistDeck/what.png"><img src="https://dl.dropbox.com/u/2361730/GistDeck/what.png" alt="" style="max-width:100%;"></a></p>
+<p><a href="https://dl.dropbox.com/u/2361730/GistDeck/what.png" target="_blank"><img src="https://dl.dropbox.com/u/2361730/GistDeck/what.png" alt="" style="max-width:100%;"></a></p>
 
 <ol>
 <li><a href="http://gistdeck.herokuapp.com/">Install Bookmarklet</a></li>
 <li><a href="https://gist.github.com/b273f7a3089b1a238f5a">Visit Gist</a></li>
 <li>Click Bookmarklet</li>
 <li>Present</li>
-</ol><h1>
-<a name="contribute-on-github" class="anchor" href="#contribute-on-github"><span class="mini-icon mini-icon-link"></span></a>Contribute on Github</h1>
+</ol><h1>Contribute on Github</h1>
 
 <p><a href="https://github.com/nzoschke/gistdeck">https://github.com/nzoschke/gistdeck</a></p>
 
-<h1>
-<a name="fin" class="anchor" href="#fin"><span class="mini-icon mini-icon-link"></span></a>fin</h1>
+<h1>fin</h1>
 
-<p>by <a href="http://twitter.com/nzoschke">noah</a> and <a href="http://twitter.com/seaofclouds">todd</a></p></article>
-  </div>
-
-</div>
-
-
-     <!-- cache end -->
-
-      <div id="delete_link" class="instapaper_ignore"><a href="/delete/b273f7a3089b1a238f5a" data-confirm="Are you sure?" data-method="delete">delete this gist</a></div>
-
-  </div>
-
-    <div id="comments">
-
-<form accept-charset="UTF-8" action="/b273f7a3089b1a238f5a/comment" method="post"><div style="margin:0;padding:0;display:inline"><input name="authenticity_token" type="hidden" value="B3FEEgmz69GyGd56gsxTqrT5AGy1jwh5BuWtMycKZug=" /></div>          
-<p class="comment-form-error" style="display:none">You must write something to leave a comment</p>
-<div class="comment-form previewable-comment-form write-selected" data-preview-url="/preview">
-  <p class="help">Comments are parsed with <a href="http://github.github.com/github-flavored-markdown/" class="gfm-help" target="_blank">GitHub Flavored Markdown</a></p>
-  <ul class="edit-preview-tabs js-preview-tabs">
-    <li><a href="#write_bucket_650" class="write-tab" action="write">Write</a></li>
-    <li><a href="#preview_bucket_650" class="preview-tab" action="preview">Preview</a></li>
-  </ul>
-  <div id="write_bucket_650" class="tab-content write-content js-write-bucket">
-    <textarea name="comment[body]" tabindex="1" id="comment_body_650" class="js-comment-field" data-suggester-list="comment_body_650_mentions"></textarea>
-  </div>
-  <div id="preview_bucket_650" class="new-comments tab-content preview-content js-preview-bucket">
-    
-<div id="openstruct-103279460" class="comment normal-comment">
-  <div class="cmeta">
-    <p class="author">
-        <span class="gravatar"><img height="20" src="https://secure.gravatar.com/avatar/0c5c5a350941044192ff794a9cd2205b?s=140&amp;d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-140.png" width="20" /></span>
-      <strong class="author"><a href="/seaofclouds">seaofclouds</a></strong>
-      <em class='action-text'>
-        <a href="#openstruct-103279460">
-        commented
-        </a>
-      </em>
-    </p>
-    <p class="info">
-      <em class="date"><a href="#openstruct-103279460"><time class="js-relative-date" datetime="2012-06-27T23:21:12-07:00" title="2012-06-27 23:21:12">June 27, 2012</time></a></em>
-        <span class="icon"></span>
-    </p>
+<p>by <a href="http://twitter.com/nzoschke">noah</a> and <a href="http://twitter.com/seaofclouds">todd</a></p>
+    </article>
   </div>
 
 
-  <div class="body">
-    <div class="formatted-content">
-      <div class="content-body markdown-body ">
-          <p>Nothing to preview</p>
-      </div>
-    </div>
-  </div>
-</div>
 
-  </div>
-
-  <div class="suggester-container js-navigation-container">
-  <div class="suggester" id="comment_body_650_mentions">
-    <ul>
-    </ul>
-  </div>
-</div>
-
-</div>
-
-          <div class="form-actions">
-            <button type="submit" class="classy" tabindex="2"><span>Add Gist Comment</span></button>
           </div>
-</form>    </div>
+        </div>
+      <div id="comments" class="new-comments">
+        
+      </div>
+      <p class="uncommentable"><span class="mini-icon mini-icon-exclamation"></span> Please <a href="/login?return_to=/b273f7a3089b1a238f5a" rel="nofollow">sign in</a> to comment on this gist.</p>
+  </div>
+</div>
 
-</div><!-- /.main -->
-
-    </div> <!-- site -->
-
-    <div class="push"></div>
+  <div class="context-overlay"></div>
+</div>
 
     </div>
+    <div class="slow-loading-overlay"></div>
+  </div>
 
+  <div id="ajax-error-message" class="flash flash-error">
+    <div class="container">
+      <span class="mini-icon mini-icon-exclamation"></span>
+      Something went wrong with that request. Please try again.
+      <a href="#" class="mini-icon mini-icon-remove-close ajax-error-dismiss"></a>
+    </div>
+  </div>
+
+  <footer>
     <div id="footer">
-      <div class="site">
-        <div class="info">
-          <div class="logo">
-            <a href="https://github.com">
-              <img alt="GitHub" src="https://a248.e.akamai.net/assets.github.com/images/modules/header/logo_white.png?1334862346" />
-            </a>
-          </div>
-          <div class="more">
-            <div class="links">
-              <a href="https://github.com/blog"><strong>Blog</strong></a> |
-              <a href="https://github.com/about">About</a> |
-              <a href="https://github.com/contact">Support</a> |
-              <a href="https://github.com/contact">Contact</a> |
-              <a href="https://github.com/site/privacy">Privacy</a> |
-              <a href="https://github.com/site/terms">Terms of Service</a>
-            </div>
-            <div class="company">
-              &copy;
-              2011
-              <span title="0.09097s from fe13.rs.github.com">GitHub</span> Inc.
-              All rights reserved.
-           </div>
-          </div>
-        </div>
-        <div class="sponsor">
-          <div>
-            Powered by the <a href="http://www.rackspace.com ">Dedicated
-            Servers</a> and<br/> <a href="http://www.rackspacecloud.com">Cloud
-            Computing</a> of Rackspace Hosting<span>&reg;</span>
-          </div>
-          <a href="http://www.rackspace.com">
-            <img alt="Dedicated Server" src="https://a248.e.akamai.net/assets.github.com/images/modules/footer/rackspaces_logo.png?1334862346" />
-          </a>
-        </div>
-      </div>
-    </div>
-  </body>
-</html>
+  <div class="container clearfix">
 
+    <p class="right">&copy; 2012 GitHub Inc. All rights reserved.</p>
+    <a class="left" href="/">
+      <span class="mega-icon mega-icon-invertocat"></span>
+    </a>
+    <ul id="legal">
+      <li><a href="http://github.com/blog">The GitHub Blog</a></li>
+      <li><a href="mailto:support@github.com">Support</a></li>
+      <li><a href="https://github.com/contact">Contact</a></li>
+    </ul>
+
+  </div><!-- /.container -->
+</div><!-- /.#footer -->
+
+  </footer>
+
+</body>
+</html>
