@@ -3,10 +3,18 @@ if (typeof(GISTDECK_CSS_URL) == "undefined")
 $("head").append('<link rel="stylesheet" href="' + GISTDECK_CSS_URL + '" type="text/css" />');
 
 var slides = $("#owner, .markdown-body h1, .markdown-body h2");
+// Cache the window jQuery object.
+$window = $(window);
+// Set a gap between each slide equal to the window height to stop slides
+// intruding on each other. But don't do it for the first slide.
+slides.not(slides.first()).css('margin-top', $window.height());
+// Also set this gap between the last slide element and the slides container.
+// This stops the end slide always being at the bottom of the window.
+$('.markdown-body').css('margin-bottom', $window.height());
 
 function getCurrentSlideIdx() {
   var idx = 0;
-  var viewportBottom = $(window).scrollTop() + $(window).height();
+  var viewportBottom = $window.scrollTop() + $window.height();
 
   for (var i=0; i < slides.length; i++) {
     if (slides.eq(i).offset().top > viewportBottom) break;
