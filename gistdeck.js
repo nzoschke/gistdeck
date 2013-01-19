@@ -31,9 +31,26 @@ function displaySlide(n) {
   var s = slides.eq(n);
   var top = s.offset().top;
 
+  // To vertically center the H1 slides, we must calculate the height of the
+  // slide content. To do this, get the difference between the bottom of the
+  // last and top of the first slide element. We should only do this if there
+  // is a next slide.
+  var lastSlideELement = slides.eq(n+1).prev();
+  var titleTop = 150;
+  var contentHeight = 0;
+  if (lastSlideELement.length === 0) {
+    // lastSlideELement will be empty if we are at the last slide. In that case
+    // find the last element. .nextAll().andSelf() ensures we don't end up with
+    // an empty set since nextAll() will return empty if at the last element.
+    lastSlideELement = s.nextAll().andSelf().last();
+  }
+  contentHeight = (lastSlideELement.offset().top + lastSlideELement.height()) - top;
+  // The top line is half the window plus half the content height.
+  titleTop = ($window.height()/2) - (contentHeight/2);
+
   var padding = {
-    "DIV": s.offset().top,
-    "H1":  150,
+    "DIV": top,
+    "H1":  titleTop,
     "H2":  20
   }[slides[n].tagName];
 
