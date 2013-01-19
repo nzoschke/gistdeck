@@ -7,7 +7,9 @@
 #footer,
 #files .file .meta,
 #forks,
-.fork-info {
+.fork-info,
+.root-pane,
+.uncommentable {
   display:none !important;
 }
 .secondary {
@@ -26,7 +28,6 @@
 .last-commit,
 .commit,  
 .breadcrumb,
-.bubble,
 .pagehead,
 #readme .name,
 a.anchor span {
@@ -35,9 +36,18 @@ a.anchor span {
 #readme, .markdown-body {
   background:none !important;
   background: transparent !important;
-  border: 0 none !important;  
+  border: 0 none !important;
+  padding: 0 !important;
 }
 
+/* reset github interface styles */
+.bubble,
+.bubble .file-box {
+  background: none !important;
+  border: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
 
 /* basic style */
 
