@@ -5,21 +5,22 @@
 #comments,
 #delete_link,
 #footer,
-#files .file .meta,
+.files .file-box .meta,
 #forks,
 .fork-info,
 .root-pane,
 .uncommentable {
   display:none !important;
 }
-.secondary {
+.secondary,
+.files {
   float: none !important;
   width: auto !important;
 }
 .main {
   width:auto !important;
 }
-#repos .repo, #main, .file, .file article {
+#repos .repo, #main, .file-box, .file-box article {
   background:none !important;
   background: transparent !important;
 }
@@ -75,7 +76,7 @@ a:hover {
   color: #514ECA !important;
 }
 
-.file {
+.file-box {
   font-size:36px !important;
   line-height:54px !important;
   padding: 30px !important;
@@ -200,12 +201,12 @@ h2 + p img {
 
 
 
-.file img {
+.file-box img {
   -webkit-box-reflect: below 0px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(80%, transparent), to(rgba(255,255,255,0.2)));
 }
 /* code style */
 
-.file div.highlight {
+.file-box div.highlight {
   background: none !important;
   background: transparent !important;
 }
