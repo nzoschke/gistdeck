@@ -1,4 +1,4 @@
-var slides = $('#gistbody .file > h2');
+var slides = $('#description, #gistbody .file > h1:not(:first-child), #gistbody .file > h2');
 // Cache the window jQuery object.
 $window = $(window);
 // Set a gap between each slide equal to the window height to stop slides
@@ -6,7 +6,9 @@ $window = $(window);
 slides.not(slides.first()).css('margin-top', $window.height());
 // Also set this gap between the last slide element and the slides container.
 // This stops the end slide always being at the bottom of the window.
-$('.markdown-body').css('margin-bottom', $window.height());
+$('.file').css('margin-bottom', $window.height());
+// Hide the ID
+$('#gistid').hide();
 
 function getCurrentSlideIdx() {
   var idx = 0;
@@ -34,7 +36,7 @@ function displaySlide(n) {
   var lastSlideELement = slides.eq(n+1).prev();
   var titleTop = 150;
   var contentHeight = 0;
-  if (lastSlideELement.length === 0) {
+  if (lastSlideELement.length === 0 || n === 0) {
     // lastSlideELement will be empty if we are at the last slide. In that case
     // find the last element. .nextAll().andSelf() ensures we don't end up with
     // an empty set since nextAll() will return empty if at the last element.
@@ -49,6 +51,12 @@ function displaySlide(n) {
     "H1":  titleTop,
     "H2":  20
   }[slides[n].tagName];
+
+  // If this is the first slide, we need some room above.
+  if (n === 0) {
+    padding = titleTop;
+    s.css('margin-top', padding);
+  }
 
   $(document).scrollTop(top - padding);
 }
