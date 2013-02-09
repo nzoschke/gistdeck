@@ -9,7 +9,8 @@
 #forks,
 .fork-info,
 .root-pane,
-.uncommentable {
+.uncommentable,
+.js-comment-form {
   display:none !important;
 }
 .secondary,
