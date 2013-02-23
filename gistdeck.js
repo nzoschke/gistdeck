@@ -17,7 +17,7 @@
     $slides.not($slides.first()).css('margin-top', $window.height());
     $('.markdown-body').css('margin-bottom', $window.height());
 
-    $(document).keydown(function(e) {
+    $(document).on('keydown.gistdeck', function(e) {
       if (e.which == 37)      displaySlide(getCurrentSlideIdx()-1);
       else if (e.which == 39) displaySlide(getCurrentSlideIdx()+1);
       else if (e.which == 27) resetGist();
@@ -27,10 +27,15 @@
   }
 
   function resetGist() {
+    // Reset margins
     $slides.not($slides.first()).css('margin-top', '');
     $('.markdown-body').css('margin-bottom', '');
-    $('.gistdeck-css').remove();
+
     $(document).scrollTop(0);
+    $('.gistdeck-css').remove();
+
+    // Unbind every gistdeck event handler
+    $(document).off('.gistdeck');
   }
 
   function getCurrentSlideIdx() {
