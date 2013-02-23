@@ -4,7 +4,7 @@
 
   function initialize() {
     if (typeof(GISTDECK_CSS_URL) == "undefined") {
-        var GISTDECK_CSS_URL="https://gistdeck.herokuapp.com/gistdeck.css";
+        var GISTDECK_CSS_URL="https://gistdeck.herokuapp.com/gistdeck.min.css";
     }
 
     $('<link rel="stylesheet" href="' + GISTDECK_CSS_URL + '" type="text/css" />')
