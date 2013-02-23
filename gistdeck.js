@@ -1,5 +1,5 @@
 if (typeof(GISTDECK_CSS_URL) == "undefined")
-    var GISTDECK_CSS_URL="https://gistdeck.herokuapp.com/gistdeck.css"
+    var GISTDECK_CSS_URL="https://gistdeck.herokuapp.com/gistdeck.min.css";
 $("head").append('<link rel="stylesheet" href="' + GISTDECK_CSS_URL + '" type="text/css" />');
 
 var slides = $("#owner, .markdown-body h1, .markdown-body h2");
