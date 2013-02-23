@@ -29,11 +29,11 @@
 
   <!-- bookmarklet-ish injection of local script and css -->
   <script type="text/javascript">
-    var GISTDECK_CSS_URL="gistdeck.css";
+    var GISTDECK_CSS_URL="gistdeck.min.css";
 
     window.onload = function () {
       var s = document.createElement("script");
-      s.setAttribute("src", "gistdeck.js");
+      s.setAttribute("src", "gistdeck.min.js");
       document.getElementsByTagName("head")[0].appendChild(s);
     };
   </script>
