@@ -1,8 +1,9 @@
-
 /* hide gist interface */
 #header,
 #revisions,
 #comments,
+.discussion-bubble,
+.form-actions,
 #delete_link,
 #footer,
 .files .file-box .meta,
