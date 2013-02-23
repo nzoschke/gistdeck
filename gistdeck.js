@@ -27,6 +27,8 @@
   }
 
   function resetGist() {
+    $slides.not($slides.first()).css('margin-top', '');
+    $('.markdown-body').css('margin-bottom', '');
     $('.gistdeck-css').remove();
     $(document).scrollTop(0);
   }
