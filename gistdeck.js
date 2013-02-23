@@ -1,23 +1,22 @@
 if (typeof(GISTDECK_CSS_URL) == "undefined")
     var GISTDECK_CSS_URL="https://gistdeck.herokuapp.com/gistdeck.css"
+
 $("head").append('<link rel="stylesheet" href="' + GISTDECK_CSS_URL + '" type="text/css" />');
 
-var slides = $("#owner, .markdown-body h1, .markdown-body h2");
-// Cache the window jQuery object.
+// Cache window and slides jQuery selectors
 $window = $(window);
-// Set a gap between each slide equal to the window height to stop slides
-// intruding on each other. But don't do it for the first slide.
-slides.not(slides.first()).css('margin-top', $window.height());
-// Also set this gap between the last slide element and the slides container.
-// This stops the end slide always being at the bottom of the window.
+$slides = $("#owner, .markdown-body h1, .markdown-body h2");
+
+// Set gap before all slides but first, and after slides container, equal to the window height
+$slides.not($slides.first()).css('margin-top', $window.height());
 $('.markdown-body').css('margin-bottom', $window.height());
 
 function getCurrentSlideIdx() {
   var idx = 0;
   var viewportBottom = $window.scrollTop() + $window.height();
 
-  for (var i=0; i < slides.length; i++) {
-    if (slides.eq(i).offset().top > viewportBottom) break;
+  for (var i=0; i < $slides.length; i++) {
+    if ($slides.eq(i).offset().top > viewportBottom) break;
     idx = i;
   }
 
@@ -25,17 +24,17 @@ function getCurrentSlideIdx() {
 }
 
 function displaySlide(n) {
-  n = Math.min(n, slides.length-1);
+  n = Math.min(n, $slides.length-1);
   n = Math.max(n, 0);
 
-  var s = slides.eq(n);
+  var s = $slides.eq(n);
   var top = s.offset().top;
 
   // To vertically center the H1 slides, we must calculate the height of the
   // slide content. To do this, get the difference between the bottom of the
   // last and top of the first slide element. We should only do this if there
   // is a next slide.
-  var lastSlideELement = slides.eq(n+1).prev();
+  var lastSlideELement = $slides.eq(n+1).prev();
   var titleTop = 150;
   var contentHeight = 0;
   if (lastSlideELement.length === 0) {
@@ -52,7 +51,7 @@ function displaySlide(n) {
     "DIV": top,
     "H1":  titleTop,
     "H2":  20
-  }[slides[n].tagName];
+  }[$slides[n].tagName];
 
   $(document).scrollTop(top - padding);
 }
