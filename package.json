@@ -1,0 +1,15 @@
+{
+  "name": "gistdeck",
+  "version": "0.0.1",
+  "description": "GistDeck is a presentation layer for one of our favorite text sharing tools.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nzoschke/gistdeck.git"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.0",
+    "grunt-contrib-uglify": "~0.1.1",
+    "grunt-css": "~0.5.3"
+  },
+  "author": "nzoschke & seaofclouds"
+}
