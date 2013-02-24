@@ -112,20 +112,23 @@ a:hover {
   margin-top:120px !important;
 }
 
-.gist-author img {
-  height:36px !important;
-  width: 36px !important;
-}
-
 .gist-author {
   font-weight:normal !important;
-  font-size: 24px !important;
+  font-size: 0px !important; /* removes the trailing slash */
   color: #676482 !important;
   text-shadow: hsla(246, 13%, 100%, 0.5) 0px 1px 0px;
 }
 
+.gist-author img {
+  height:36px !important;
+  width: 36px !important;
+  margin-bottom: 7px;
+  margin-right: 6px;
+}
+
 .gist-author .author a {
   color: #676482 !important;
+  font-size: 24px !important;
   font-weight:normal !important;
 }
 
