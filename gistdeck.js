@@ -1,13 +1,11 @@
 (function() {
 
   // Cache window and slides jQuery selectors
-  $window = $(window);
-  $slides = $("#owner, .markdown-body h1, .markdown-body h2");
+  var $window = $(window);
+  var $slides = $(".pagehead, .markdown-body h1, .markdown-body h2");
 
   function initialize() {
-    if (typeof(GISTDECK_CSS_URL) == "undefined") {
-        var GISTDECK_CSS_URL="https://gistdeck.herokuapp.com/gistdeck.css";
-    }
+    var GISTDECK_CSS_URL= window.GISTDECK_CSS_URL || "https://gistdeck.herokuapp.com/gistdeck.css";
 
     $('<link rel="stylesheet" href="' + GISTDECK_CSS_URL + '" type="text/css" />')
       .addClass('gistdeck-css')
@@ -16,6 +14,8 @@
     // Set gap before all slides but first, and after slides container, equal to the window height
     $slides.not($slides.first()).css('margin-top', $window.height());
     $('.markdown-body').css('margin-bottom', $window.height());
+    // so the gist description also looks like a slide
+    $('.gist-description').css('margin-bottom', $window.height());
 
     $(document).on('keydown.gistdeck', function(e) {
       if (e.which == 37)      displaySlide(getCurrentSlideIdx()-1);
