@@ -30,6 +30,7 @@
     // Reset margins
     $slides.not($slides.first()).css('margin-top', '');
     $('.markdown-body').css('margin-bottom', '');
+    $('.gist-description').css('margin-bottom', '');
 
     $(document).scrollTop(0);
     $('.gistdeck-css').remove();
