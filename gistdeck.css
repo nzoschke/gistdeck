@@ -205,6 +205,7 @@ div.highlight pre, pre, .markdown-body code {
   -moz-border-radius: 6px !important;
   border-radius: 6px !important;
   text-align:left;
+  font-size: 36px !important;
 }
 div.highlight pre, pre code, li code {
   font-size:16px !important;
