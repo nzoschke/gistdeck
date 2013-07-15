@@ -11,6 +11,20 @@
       .addClass('gistdeck-css')
       .appendTo('head');
 
+    $('[id$=-css]').each(function() {
+      // Using ajax to grab contents of CSS file because gist doesn't
+      // provide the right content-type to make it a style link
+      // No problems with same-origin policy when script is run from gist.github.com
+      $.ajax({
+        url: $(this).find('.file-actions a:last').attr('href'),
+        success: function(data) {
+          $( '<style type="text/css">' + data + '</style>' )
+            .addClass('gistdeck-css')
+            .appendTo('head');
+        }
+      });
+    });
+
     // Set gap before all slides but first, and after slides container, equal to the window height
     $slides.not($slides.first()).css('margin-top', $window.height());
     $('.markdown-body').css('margin-bottom', $window.height());
