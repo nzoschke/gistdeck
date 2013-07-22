@@ -1,4 +1,4 @@
-(function() {
+function gistdeck() {
 
   // Cache window and slides jQuery selectors
   var $window = $(window);
@@ -104,4 +104,6 @@
     initialize();
   }
 
-})();
+};
+
+module.exports = gistdeck;

@@ -50,6 +50,14 @@ dictumst. Fusce faucibus sagittis sapien vel posuere.
     ```ruby
     ['a', 'b'].map(&:uppercase)
     ````
+    
+## Exporting
+
+You can export your deck as a stack of PNGs or as a single PDF using our
+phantomjs plugin
+
+1. `sudo npm install -g phantomjs`
+2. `phantomjs rasterize.js <url-to-gist> [directory] [width] [height]`
+3. `convert slides/* -compress jpeg -resize 1024x768 -units PixelsPerInch -density 150x150 output.pdf # requires ImageMagick`
 
 # <a href="http://gistdeck.herokuapp.com">GistDeck</a> by <a href="https://github.com/nzoschke">noah</a> and <a href="https://github.com/seaofclouds">todd</a>
-
